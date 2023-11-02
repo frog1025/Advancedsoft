@@ -38,7 +38,7 @@ stages:
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
       inputs:
-        SourceFolder: 'Web/WEB-INF/Advancedsoft'
+        SourceFolder: 'Web/WEB-INF/Advancedsoft/target'
         Contents: '**/target/*.?(war|jar)'
         TargetFolder: $(Build.ArtifactStagingDirectory)
 
